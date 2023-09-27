@@ -21,14 +21,36 @@ export const App = () => {
           <Typography
             sx={{
               border: 2,
-              my:3,
+              my: 3,
               p: 5,
               borderColor: "peru",
-              borderRadius:2,
+              borderRadius: 2,
               bgcolor: "#333",
               color: 'white'
             }}
             variant="body1">Que hermoso es MUI</Typography>
+        </Box>
+      </Container>
+      <Container
+        maxWidth={'sm'}
+        sx={{
+          boxShadow: 3,
+          pb: 4,
+          m: 1
+        }}
+      >
+        <Box>
+          <Typography variant="h4" >App</Typography>
+          <Typography variant="h5" >Theme Options</Typography>
+        </Box>
+        <Box
+          sx={{
+            my: 2
+          }}
+        >
+          <Button
+            color="buttons"
+            variant="contained">MY first Buttom</Button>
         </Box>
       </Container>
     </>
