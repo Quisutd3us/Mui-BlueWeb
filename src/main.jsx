@@ -22,6 +22,7 @@ const theme = createTheme({
     },
     buttons:{
       main:'olive',
+      secondary: 'rgba(47,47,47,0.6)',
     },
     text: {
       primary: 'rgba(30,30,30,0.87)',

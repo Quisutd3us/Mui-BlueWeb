@@ -1,3 +1,4 @@
+import { AgricultureOutlined, HtmlRounded } from "@mui/icons-material";
 import { Box, Button, Container, Typography } from "@mui/material";
 
 export const App = () => {
@@ -40,19 +41,65 @@ export const App = () => {
         }}
       >
         <Box>
-          <Typography variant="h4" >App</Typography>
-          <Typography variant="h5" >Theme Options</Typography>
+          <Typography variant="h4" sx={{ py: 2 }} >App</Typography>
+          <Typography variant="h5" >Theme</Typography>
         </Box>
         <Box
+          display={'flex'}
+          flexWrap={'wrap'}
+          justifyContent={'space-evenly'}
+          alignItems={'center'}
+          gap={3}
           sx={{
             my: 2
           }}
         >
           <Button
             color="buttons"
-            variant="contained">MY first Buttom</Button>
+            variant="contained">MY first Buttom
+          </Button>
+          <Button
+            color="success"
+            variant="contained">MY first Buttom
+          </Button>
+          <Button
+            color="error"
+            variant="contained">MY first Buttom
+          </Button>
+          <Button
+            variant="text">MY first Buttom
+          </Button>
+          <Button
+            color='secondary'
+            variant="outlined">MY first Buttom
+          </Button>
         </Box>
-      </Container>
+
+        <Box
+          display={'flex'}
+          flexWrap={'wrap'}
+          justifyContent={'space-evenly'}
+          alignItems={'center'}
+          gap={3}
+          sx={{
+            my: 2
+          }}
+        >
+
+          <Button
+            variant={"contained"}
+            startIcon={<AgricultureOutlined />}
+          >
+            Agriculture
+          </Button>
+          <Button
+            variant={"outlined"}
+            endIcon={<HtmlRounded />}
+          >
+            Geek
+          </Button>
+        </Box>
+      </Container >
     </>
   );
 };
