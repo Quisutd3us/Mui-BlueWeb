@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import { GridMui } from "./components";
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -32,6 +31,7 @@ const theme = createTheme({
   },
 });
 
+import { ProductItem } from "./components";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -40,7 +40,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
       <CssBaseline />
       {/* <App /> */}
-      <GridMui/>
+      {/* <GridMui/> */}
+      <ProductItem/>
     </React.StrictMode>
   </ThemeProvider>,
 
