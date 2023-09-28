@@ -31,7 +31,7 @@ const theme = createTheme({
   },
 });
 
-import { ProductItem } from "./components";
+import { CardItem } from "./components";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -41,7 +41,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <CssBaseline />
       {/* <App /> */}
       {/* <GridMui/> */}
-      <ProductItem/>
+      {/* <ProductItem/> */}
+      <CardItem/>
     </React.StrictMode>
   </ThemeProvider>,
 
